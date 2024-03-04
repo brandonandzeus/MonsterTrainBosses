@@ -43,6 +43,7 @@ Wave 8 | **Steelwing (0/15/100)** | **Steelwing (0/15/100)** | Seraph (6/4000/Sw
 
 #### Sin: Freezing Emblem
 ![Freezing Emblem](https://github.com/brandonandzeus/MonsterTrainBosses/blob/main/Assets/Icons/SIN_Boss_Frost.png)
+
 Friendly units enter with Frostbite 2.
 
 #### Seraph Behaviour
