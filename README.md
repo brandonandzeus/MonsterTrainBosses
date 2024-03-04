@@ -40,3 +40,10 @@ Wave 5 | Gilded Wing (10/190)     | Gilded Wing (10/190)     | Lightwing (15/3)
 Wave 6 | Pyrewings (4/150/Sw/Em)  | Gilded Wing (10/190)     | Lightwing (15/3)
 Wave 7 | Steelwing (0/15/100)     | Gilded Wing (10/190)     | Lightwing (15/3)
 Wave 8 | **Steelwing (0/15/100)** | **Steelwing (0/15/100)** | Seraph (6/4000/Sw)
+
+#### Sin: Freezing Emblem
+![Freezing Emblem](https://github.com/brandonandzeus/MonsterTrainBosses/blob/main/Assets/Icons/SIN_Boss_Frost.png)
+Friendly units enter with Frostbite 2.
+
+#### Seraph Behaviour
+Every turn Seraph will target an occupied floor and apply Frostbite 2 to all friendly units on the floor.
