@@ -5,6 +5,7 @@ namespace MoreBosses
 {
     public enum RegistrationPriority
     {
+        // TODO Renmae Enums to specify boss, enemy, shard enhanced enemy, scenario
         CLAN = 0,
         STARTER_RELIC,
         STARTER_CARD,
@@ -14,6 +15,7 @@ namespace MoreBosses
         HIGH,
         MEDIUM,
         LOW,
+        SCENARIO,
     }
 
     /// <summary>

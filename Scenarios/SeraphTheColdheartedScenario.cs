@@ -1,4 +1,5 @@
 ﻿using MoreBosses.Bosses;
+using MoreBosses.Enemies;
 using MoreBosses.Sins;
 using Trainworks.BuildersV2;
 using Trainworks.ConstantsV2;
@@ -9,7 +10,7 @@ namespace MoreBosses.Scenarios
     public class SeraphTheColdheartedScenario
     {
         public static readonly string ID = "SeraphTheColdhearted";
-        public static readonly RegistrationPriority Priority = RegistrationPriority.LOW;
+        public static readonly RegistrationPriority Priority = RegistrationPriority.SCENARIO;
 
         public static void AutoRegister()
         {
@@ -32,8 +33,8 @@ namespace MoreBosses.Scenarios
             var steelwing = CustomCharacterManager.GetCharacterDataByID(VanillaCharacterIDs.Steelwings);
             // 15/3
             var lightwing = CustomCharacterManager.GetCharacterDataByID(VanillaCharacterIDs.Lightwings);
-            // 4/150/sweep
-            var pyrewing = CustomCharacterManager.GetCharacterDataByID(VanillaCharacterIDs.Pyrewings);
+            // 3/150/sweep
+            var frostwing = CustomCharacterManager.GetCharacterDataByID(Frostwings.ID);
 
             var freezingEmblem = CustomScenarioManager.GetSinsDataByID(FreezingEmblem.ID);
 
@@ -99,7 +100,7 @@ namespace MoreBosses.Scenarios
                                         },
                                         new SpawnCharacterDataBuilder
                                         {
-                                            CharacterData = pyrewing,
+                                            CharacterData = frostwing,
                                         }
 
                                     }
@@ -145,7 +146,7 @@ namespace MoreBosses.Scenarios
                                         },
                                         new SpawnCharacterDataBuilder
                                         {
-                                            CharacterData = pyrewing,
+                                            CharacterData = frostwing,
                                         },
                                     }
                                 }
@@ -194,7 +195,7 @@ namespace MoreBosses.Scenarios
                                         },
                                         new SpawnCharacterDataBuilder
                                         {
-                                            CharacterData = pyrewing,
+                                            CharacterData = frostwing,
                                             RequiredCovenant = cov3,
                                         },
                                     }

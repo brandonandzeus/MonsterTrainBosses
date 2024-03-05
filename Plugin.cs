@@ -16,7 +16,7 @@ namespace MoreBosses
     {
         public const string MODGUID = "more.bosses";
         public const string MODNAME = "More Bosses";
-        public const string VERSION = "1.0";
+        public const string VERSION = "1.0.1";
         public static string BasePath;
 
         private void Awake()

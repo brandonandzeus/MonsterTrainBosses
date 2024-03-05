@@ -24,7 +24,7 @@ namespace MoreBosses.Bosses
             CharacterData SeraphTheColdhearted = new CharacterDataBuilder
             {
                 CharacterID = ID,
-
+                NameKey = "SeraphTheColdhearted_CharacterData_NameKey",
                 Size = 6,
                 Health = 2300,
                 IsOuterTrainBoss = true,

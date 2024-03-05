@@ -8,8 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Assets\**" />
     <Compile Remove="Distribution\**" />
+    <EmbeddedResource Remove="Assets\**" />
     <EmbeddedResource Remove="Distribution\**" />
+    <None Remove="Assets\**" />
     <None Remove="Distribution\**" />
   </ItemGroup>
 
