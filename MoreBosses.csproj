@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <OutDir>C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\3172898394\plugins</OutDir>
+    <ErrorReport>none</ErrorReport>
   </PropertyGroup>
 
   <ItemGroup>
@@ -72,5 +75,9 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="call postbuild.bat" />
+  </Target>
 
 </Project>

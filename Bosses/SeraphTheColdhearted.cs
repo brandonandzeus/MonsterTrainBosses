@@ -90,7 +90,7 @@ namespace MoreBosses.Bosses
                 BundleLoadingInfo = new BundleAssetLoadingInfo
                 {
                     BaseName = "ENM_SeraphTheTraitor_Frost",
-                    FilePath = "Assets/seraph_frost_test",
+                    FilePath = "Assets/more_bosses_assetbundle",
                     SpriteName = "Assets/ENM_SeraphTheTraitor_Frost.png",
                     SpineAnimationDict = new Dictionary<CharacterUI.Anim, string>
                     {
