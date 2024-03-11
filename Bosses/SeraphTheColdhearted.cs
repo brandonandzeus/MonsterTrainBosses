@@ -21,7 +21,7 @@ namespace MoreBosses.Bosses
             CharacterData baseSeraph = CustomCharacterManager.GetCharacterDataByID(VanillaCharacterIDs.SeraphtheChaste);
             CharacterData lightwings = CustomCharacterManager.GetCharacterDataByID(VanillaCharacterIDs.Lightwings);
 
-            CharacterData SeraphTheColdhearted = new CharacterDataBuilder
+            new CharacterDataBuilder
             {
                 CharacterID = ID,
 

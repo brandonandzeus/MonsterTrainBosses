@@ -34,6 +34,7 @@ namespace MoreBosses.Scenarios
             // 15/3
             var lightwing = CustomCharacterManager.GetCharacterDataByID(VanillaCharacterIDs.Lightwings);
             // 3/150/sweep
+            var pyrewing = CustomCharacterManager.GetCharacterDataByID(VanillaCharacterIDs.Pyrewings);
             var frostwing = CustomCharacterManager.GetCharacterDataByID(Frostwings.ID);
 
             var freezingEmblem = CustomScenarioManager.GetSinsDataByID(FreezingEmblem.ID);
@@ -43,6 +44,12 @@ namespace MoreBosses.Scenarios
 
             var baseScenario = CustomScenarioManager.GetScenarioDataByID(VanillaScenarioIDs.SeraphtheChaste);
 
+            /*SpawnWaveHelper spawnWaveHelper = new SpawnWaveHelper(baseScenario);
+            spawnWaveHelper.ReplaceCharacter(pyrewing, frostwing);
+            spawnWaveHelper.ReplaceCharacterInWave(7, 0, 0, steelwing);
+            spawnWaveHelper.ReplaceCharacterInWave(7, 0, 1, steelwing);
+            spawnWaveHelper.Print();*/
+
             // Make a scenario.
             ScenarioDataBuilder scenario = new ScenarioDataBuilder
             {
@@ -50,7 +57,6 @@ namespace MoreBosses.Scenarios
                 BattleDescriptionKey = battleDescriptionKey,
                 // Distance from the first battle, 7 fights away so distance 7.
                 Distance = 7,
-                SpawnPattern = baseScenario.GetSpawnPattern(),
                 SpawnPatternBuilder = new SpawnPatternDataBuilder
                 {
                     SpawnGroupWaves =
@@ -263,7 +269,7 @@ namespace MoreBosses.Scenarios
                 CompletedSpritePath = "Assets/Icons/BattleNodes_Seraph_Completed.png",
                 InactiveSpritePath = "Assets/Icons/BattleNodes_Seraph_Frost_Inactive.png",
                 ActiveSpritePath = "Assets/Icons/BattleNodes_Seraph_Frost_Active.png",
-                HighlightSpritePath = "Assets/Icons/BattleNodes_Seraph_Highlight.png",
+                HighlightSpritePath = "Assets/Icons/BattleNodes_MajorBoss_Highlight.png",
                 EnemyBlessingData =
                 {
                     // Add your sins data here.
